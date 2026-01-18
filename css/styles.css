@@ -67,7 +67,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--color-black);
     letter-spacing: -0.02em;
@@ -492,7 +492,7 @@ body {
 }
 
 .contact-inner {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     text-align: center;
 }
@@ -511,8 +511,17 @@ body {
 
 .contact-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 16px;
+}
+
+.contact-cards::before {
+    content: '';
+    grid-column: span 1;
+}
+
+.contact-cards .contact-card {
+    grid-column: span 2;
 }
 
 .contact-card {
@@ -1195,6 +1204,14 @@ body {
     .contact-cards {
         grid-template-columns: 1fr;
         gap: 12px;
+    }
+
+    .contact-cards::before {
+        display: none;
+    }
+
+    .contact-cards .contact-card {
+        grid-column: span 1;
     }
 
     .contact-card {
