@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자주 묻는 질문 | 특허법인 테헤란</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Group_1000003898.png">
+    <link rel="apple-touch-icon" href="img/Group_1000003898.png">
+    
     <!-- Fonts - Pretendard -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     
@@ -38,6 +42,7 @@
                 </button>
             </div>
             <nav class="header-nav" id="headerNav">
+                <a href="#direct-contact" class="header-nav-link">직통문의</a>
                 <a href="#guide" class="header-nav-link">가이드</a>
                 <a href="#common" class="header-nav-link">공통 문의</a>
                 <a href="#patent" class="header-nav-link">특허 문의</a>
@@ -57,7 +62,8 @@
         <aside class="sidebar">
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#guide" class="nav-link active">가이드</a></li>
+                    <li class="nav-item"><a href="#direct-contact" class="nav-link active">직통문의</a></li>
+                    <li class="nav-item"><a href="#guide" class="nav-link">가이드</a></li>
                     <li class="nav-item"><a href="#common" class="nav-link">공통 문의</a></li>
                     <li class="nav-item"><a href="#patent" class="nav-link">특허 문의</a></li>
                     <li class="nav-item"><a href="#trademark" class="nav-link">상표 문의</a></li>
@@ -68,6 +74,23 @@
         </aside>
 
         <div class="content">
+            <!-- 직통문의 섹션 -->
+            <section id="direct-contact" class="direct-contact-section">
+                <h2 class="section-title"><span class="section-icon">📞</span>직통 문의</h2>
+                <button class="direct-contact-btn" data-modal="modal-direct-contact">
+                    <span class="direct-contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </span>
+                    <span class="direct-contact-text">
+                        <strong>전문 변리사에게 바로 연결</strong>
+                        <small>클릭하여 담당자 선택</small>
+                    </span>
+                    <span class="direct-contact-arrow">→</span>
+                </button>
+            </section>
+
             <!-- 가이드 섹션 -->
             <section id="guide" class="guide-section">
                 <h2 class="section-title"><span class="section-icon">📚</span>가이드</h2>
@@ -903,20 +926,24 @@
             <h2>추가 문의가 필요하신가요?</h2>
             <p>전문 변리사가 친절하게 상담해 드립니다.</p>
             <div class="contact-cards">
-                <a href="tel:02-2038-7679" class="contact-card contact-card--btn">
+                <a href="tel:0220387679" class="contact-card contact-card--btn">
                     <p class="contact-card-label">대표번호</p>
                     <span class="contact-card-btn">직통 연결</span>
                 </a>
-                <a href="tel:02-2038-7679" class="contact-card contact-card--btn">
+                <a href="tel:01088754370" class="contact-card contact-card--btn">
                     <p class="contact-card-label">윤웅채 변리사</p>
                     <span class="contact-card-btn">직통 연결</span>
                 </a>
-                <a href="tel:02-2038-7679" class="contact-card contact-card--btn">
+                <a href="tel:01031430252" class="contact-card contact-card--btn">
                     <p class="contact-card-label">김신연 변리사</p>
                     <span class="contact-card-btn">직통 연결</span>
                 </a>
-                <a href="tel:02-2038-7679" class="contact-card contact-card--btn">
+                <a href="tel:01071799778" class="contact-card contact-card--btn">
                     <p class="contact-card-label">이상담 변리사</p>
+                    <span class="contact-card-btn">직통 연결</span>
+                </a>
+                <a href="tel:01057472506" class="contact-card contact-card--btn">
+                    <p class="contact-card-label">김봉근 변리사</p>
                     <span class="contact-card-btn">직통 연결</span>
                 </a>
             </div>
@@ -924,6 +951,87 @@
     </section>
 
     <footer class="footer"><p>2026 특허법인 테헤란 FAQ</p></footer>
+
+    <!-- 모달: 직통문의 -->
+    <div class="modal" id="modal-direct-contact">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-container--compact">
+            <div class="modal-header">
+                <h3 class="modal-title">📞 직통 문의</h3>
+                <button class="modal-close" aria-label="닫기">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="direct-modal-desc">원하시는 담당자를 선택하시면 바로 연결됩니다.</p>
+                <div class="direct-contact-list">
+                    <a href="tel:0220387679" class="direct-contact-item">
+                        <span class="direct-item-icon">🏢</span>
+                        <span class="direct-item-info">
+                            <strong>대표번호</strong>
+                            <small>02-2038-7679</small>
+                        </span>
+                        <span class="direct-item-call">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="tel:01088754370" class="direct-contact-item">
+                        <span class="direct-item-icon">👔</span>
+                        <span class="direct-item-info">
+                            <strong>윤웅채 변리사</strong>
+                            <small>010-8875-4370</small>
+                        </span>
+                        <span class="direct-item-call">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="tel:01031430252" class="direct-contact-item">
+                        <span class="direct-item-icon">👔</span>
+                        <span class="direct-item-info">
+                            <strong>김신연 변리사</strong>
+                            <small>010-3143-0252</small>
+                        </span>
+                        <span class="direct-item-call">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="tel:01071799778" class="direct-contact-item">
+                        <span class="direct-item-icon">👔</span>
+                        <span class="direct-item-info">
+                            <strong>이상담 변리사</strong>
+                            <small>010-7179-9778</small>
+                        </span>
+                        <span class="direct-item-call">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="tel:01057472506" class="direct-contact-item">
+                        <span class="direct-item-icon">👔</span>
+                        <span class="direct-item-info">
+                            <strong>김봉근 변리사</strong>
+                            <small>010-5747-2506</small>
+                        </span>
+                        <span class="direct-item-call">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 모달 1: 전자등록증 직접 발급 방법 -->
     <div class="modal" id="modal-guide-1">

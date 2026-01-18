@@ -124,7 +124,7 @@
      * 스크롤 스파이 기능 초기화
      */
     function initScrollSpy() {
-        const sections = document.querySelectorAll('.guide-section, .faq-section');
+        const sections = document.querySelectorAll('.direct-contact-section, .guide-section, .faq-section');
         const navLinks = document.querySelectorAll('.nav-link');
 
         // 스크롤 이벤트 최적화를 위한 throttle
@@ -171,12 +171,13 @@
      * 모달 기능 초기화
      */
     function initModal() {
-        const guideCards = document.querySelectorAll('.guide-card');
+        // data-modal 속성을 가진 모든 요소 (가이드 카드, 직통문의 버튼 등)
+        const modalTriggers = document.querySelectorAll('[data-modal]');
         const modals = document.querySelectorAll('.modal');
 
-        // 가이드 카드 클릭 시 모달 열기
-        guideCards.forEach(function (card) {
-            card.addEventListener('click', function () {
+        // 모달 트리거 클릭 시 모달 열기
+        modalTriggers.forEach(function (trigger) {
+            trigger.addEventListener('click', function () {
                 const modalId = this.getAttribute('data-modal');
                 const modal = document.getElementById(modalId);
 
