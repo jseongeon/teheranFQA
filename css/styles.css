@@ -972,6 +972,23 @@ body {
     .info-table td {
         padding: 10px 12px;
     }
+
+    /* Contact Cards - 태블릿 */
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-cards::before {
+        display: none;
+    }
+
+    .contact-cards .contact-card {
+        grid-column: span 1;
+    }
+
+    .contact-cards .contact-card:last-child {
+        grid-column: span 2;
+    }
 }
 
 /* ===================================
